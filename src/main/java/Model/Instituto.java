@@ -6,7 +6,7 @@ import java.util.List;
 public class Instituto {
 
     //Declaro los atributos PRIVADOS
-    private static int num = 0;     //Cantidad de universidades
+    private static int num = 0;     //Cantidad de institutos
     private int id;
     private String uniname;
 

@@ -22,7 +22,7 @@ tabla Operación:
 
 
 tabla LineaDeOperacion:
-    (int)       LinOpid (clave primaria)
+    (int)       linopid (clave primaria)
     (int)       opid     (clave foranea)
     (int)       usid      (clave foranea)
 
