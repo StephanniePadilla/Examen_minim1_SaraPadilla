@@ -1,0 +1,32 @@
+Una forma de implementación sería tener 4 tablas, una para Alumnos, otra para Instituto,
+otra para Operacion y otra para LineaDeOperacion que relacionaria Alumno con Operación;
+cuyas claves primárias fueran las claves foráneas de una tercera tabla Ordenes que las
+relacionara entre sí.
+
+DE ESTA MANERA:
+
+tabla Alumno:
+    (int)       usid      (clave primaria)
+    (String)    username
+
+
+tabla Intituto:
+    (int)       unitid   (clave primaria)
+    (String)    uniname
+
+
+tabla Operación:
+    (int)       opid    (clave primaria)
+    (int)       usid    (clave foranea)
+    (int)       uniid   (clave foranea)
+
+
+tabla LineaDeOperacion:
+    (int)       LinOpid (clave primaria)
+    (int)       opid     (clave foranea)
+    (int)       usid      (clave foranea)
+
+
+Relación:
+Instituto 1: Alumno N
+Alumno N: Operacion M -> A través de la tabla LineaDeOperacion.
