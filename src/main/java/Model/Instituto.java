@@ -7,7 +7,7 @@ public class Instituto {
 
     //Declaro los atributos PRIVADOS
     private static int num = 0;     //Cantidad de institutos
-    private int id;
+    private int unid;
     private String uniname;
 
     private List<Operación> operacionUniList = new LinkedList<Operación>();//Operaciones de cada alumno
@@ -18,7 +18,7 @@ public class Instituto {
     }
 
     public Instituto(String username) {
-        this.id = ++num;
+        this.unid = ++num;
         this.uniname = uniname;
     }
 
@@ -31,12 +31,12 @@ public class Instituto {
         Instituto.num = num;
     }
 
-    public int getId() {
-        return id;
+    public int getUnid() {
+        return unid;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUnid(int unid) {
+        this.unid = unid;
     }
 
     public String getUniname() {

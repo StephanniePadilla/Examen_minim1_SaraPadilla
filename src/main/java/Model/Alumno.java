@@ -52,4 +52,12 @@ public class Alumno {
     public List<Operación> getOperacionAlumnoList() {
         return operacionAlumnoList;
     }
+
+    public void setInstituto(String instituto) {
+        this.instituto = instituto;
+    }
+
+    public String getInstituto() {
+        return instituto;
+    }
 }
