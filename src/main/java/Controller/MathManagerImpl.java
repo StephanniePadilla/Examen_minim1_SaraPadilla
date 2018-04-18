@@ -46,6 +46,7 @@ public class MathManagerImpl implements MathManager{
     // procesará más adelante (ver operación procesar una operación matemática).
     public int realizoOperacion(){
         //llamo al procesado de la operacion
+
         return 0;
     }
 

@@ -10,7 +10,7 @@ public interface MathManager {
     //1-Realizar una operación matemática basada en la notación polaca inversa
     // (por parte de un alumno que pertenece a un instituto). Esta operación se
     // procesará más adelante (ver operación procesar una operación matemática).
-    int  ealizoOperacion();
+    int  realizoOperacion();
 
 
     //2-Listado de operaciones matemáticas realizadas por un instituto
