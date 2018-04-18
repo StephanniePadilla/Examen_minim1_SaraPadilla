@@ -6,6 +6,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import Model.*;
@@ -17,10 +18,32 @@ import static main.java.Controller.MathManagerImpl.*;
 
 public class MathManagerService {
 
+    private Alumno a1;
+    private Alumno a2;
+
+    private Instituto u1;
+    private Instituto u2;
+
+    Operación op1;
+    Operación op2;
+
+    private List<Operación> oplist1;
+    private List<Operación> oplist2;
+
     public MathManagerService(){
         //inicializo las variables
-    }
 
+        a1 = new Alumno("Sara");
+        a2 = new Alumno("Pedro");
+
+        u1 = new Instituto("StJoan");
+        u2 = new Instituto("StPere");
+
+        oplist1 = new ArrayList<>();
+        oplist2 = new ArrayList<>();
+
+        getInstance().realizoOperacion();
+    }
 
     //Testing purposes "/products"
     @GET

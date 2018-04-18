@@ -17,7 +17,7 @@ public class Instituto {
     public Instituto () {//contructor para el POST
     }
 
-    public Instituto(String username) {
+    public Instituto(String uniname) {
         this.unid = ++num;
         this.uniname = uniname;
     }
